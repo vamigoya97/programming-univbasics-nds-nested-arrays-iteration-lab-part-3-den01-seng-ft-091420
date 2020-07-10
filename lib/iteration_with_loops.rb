@@ -9,7 +9,9 @@ def join_nested_strings(src)
       if src[row][column].class == String
         strings << src[row][column]
       end
+      column += 1 
     end
+    row += 1 
   end
   strings.join(' ')
   return strings
